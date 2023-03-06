@@ -3,8 +3,8 @@
 Return top 10 posts of a subreddit.
 """
 
-from pip._vendor import requests
 import json
+import requests
 
 
 def top_ten(subreddit):
