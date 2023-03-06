@@ -1,6 +1,11 @@
+#!/usr/bin/python3
+"""A script that use reddit api to outputs the number of subscribers of a certain subreddit"""
+
 
 import json
 import requests
+
+
 
 def number_of_subscribers(subreddit):
     
