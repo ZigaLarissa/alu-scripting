@@ -13,7 +13,7 @@ def recurse(subreddit, hot_list=[], after=None):
     headers = {'User-Agent': 'Mozilla/5.0'}
 
     # After is set to none at first.
-    params = {'after': after} if after else {}  
+    params = {'after': after} if after else {}
 
     response = requests.get(url, headers=headers, params=params)
 
