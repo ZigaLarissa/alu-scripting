@@ -4,6 +4,7 @@ A recursive function that querries the reddit api, parses title
 of all hot posts, and prints a sorted count of given keywords.
 """
 
+import json
 import requests
 import re
 
