@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 A recursive function that querries the reddit api, parses title
 of all hot posts, and prints a sorted count of given keywords.
@@ -26,19 +27,23 @@ def count_words(subreddit, word_list, after=None, counts=None):
 
     # Read the result and retrieve the titles.
     if response.status_code == 200:
+
         data = response.json()
         after = data['data']['after']
         posts = data['data']['children']
+
         for post in posts:
             title = post['data']['title'].lower()
 
             # Look for the given words in your title.
             for word in word_list:
                 word = word.lower()
+
                 # use regex to avoid panctuations around words.
                 if re.search(rf'\b{word}\b', title):
                     if word in counts:
                         counts[word] += 1
+
                     else:
                         counts[word] = 1
 
