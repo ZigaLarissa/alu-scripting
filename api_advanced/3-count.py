@@ -6,8 +6,8 @@ of all hot posts, and prints a sorted count of given keywords.
 """
 
 
-import re
 import requests
+import re
 
 
 def count_words(subreddit, word_list, after=None, counts=None):
