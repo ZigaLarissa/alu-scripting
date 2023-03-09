@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """ 3-count.py """
-import json
 import re
 import requests
 
 
 def count_words(subreddit, word_list, after=None, counts=None):
-    # Establish the counts dictionary
+    """ Establish the counts dictionary """
+
     if counts is None:
         counts = {}
 
