@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ 3-count.py """
 import re
-import requests
+from pip._vendor import requests
 
 
 def count_words(subreddit, word_list, after=None, counts=None):
