@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ 3-count.py """
 import json
-import re
 import requests
 
 
